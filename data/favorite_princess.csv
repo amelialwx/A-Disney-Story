@@ -1,0 +1,147 @@
+country,alpha2,alpha3,numeric,continent,princess
+Russia,RU,RUS,643,Europe,Cinderella
+Germany,DE,DEU,276,Europe,Cinderella
+United Kingdom,GB,GBR,826,Europe,Cinderella
+France,FR,FRA,250,Europe,Elsa
+Italy,IT,ITA,380,Europe,Ariel
+Spain,ES,ESP,724,Europe,Rapunzel
+Ukraine,UA,UKR,804,Europe,Cinderella
+Poland,PL,POL,616,Europe,Elsa
+Romania,RO,ROU,642,Europe,Rapunzel
+Netherlands,NL,NLD,528,Europe,Cinderella
+Belgium,BE,BEL,56,Europe,Elsa
+Czech Republic (Czechia),CZ,CZE,203,Europe,Elsa
+Greece,GR,GRC,300,Europe,Cinderella
+Portugal,PT,PRT,620,Europe,Rapunzel
+Sweden,SE,SWE,752,Europe,Cinderella
+Hungary,HU,HUN,348,Europe,Cinderella
+Belarus,BY,BLR,112,Europe,Elsa
+Austria,AT,AUT,40,Europe,Cinderella
+Serbia,RS,SRB,688,Europe,Cinderella
+Switzerland,CH,CHE,756,Europe,Elsa
+Bulgaria,BG,BGR,100,Europe,Cinderella
+Denmark,DK,DNK,208,Europe,Cinderella
+Finland,FI,FIN,246,Europe,Rapunzel
+Slovakia,SK,SVK,703,Europe,Elsa
+Norway,NO,NOR,578,Europe,Cinderella
+Ireland,IE,IRL,372,Europe,Cinderella
+Croatia,HR,HRV,191,Europe,Cinderella
+Moldova,MD,MDA,498,Europe,Rapunzel
+Bosnia and Herzegovina,BA,BIH,70,Europe,Elsa
+Albania,AL,ALB,8,Europe,Elsa
+Lithuania,LT,LTU,440,Europe,Cinderella
+North Macedonia,MK,MKD,807,Europe,Elsa
+Slovenia,SI,SVN,705,Europe,Elsa
+Latvia,LV,LVA,428,Europe,Cinderella
+Estonia,EE,EST,233,Europe,Elsa
+Montenegro,ME,MNE,499,Europe,Elsa
+Luxembourg,LU,LUX,442,Europe,Rapunzel
+Malta,MT,MLT,470,Europe,Snow White
+Iceland,IS,ISL,352,Europe,Cinderella
+Andorra,AD,AND,20,Europe,Rapunzel
+Nigeria,NG,NGA,566,Africa,Cinderella
+Ethiopia,ET,ETH,231,Africa,Cinderella
+Egypt,EG,EGY,818,Africa,Cinderella
+DR Congo,CD,COD,180,Africa,Ariel
+Tanzania,TZ,TZA,834,Africa,Cinderella
+South Africa,ZA,ZAF,710,Africa,Cinderella
+Kenya,KE,KEN,404,Africa,Cinderella
+Algeria,DZ,DZA,12,Africa,Elsa
+Morocco,MA,MAR,504,Africa,Elsa
+Angola,AO,AGO,24,Africa,Rapunzel
+Mozambique,MZ,MOZ,508,Africa,Ariel
+Ghana,GH,GHA,288,Africa,Cinderella
+Madagascar,MG,MDG,450,Africa,Elsa
+Cameroon,CM,CMR,120,Africa,Belle
+Côte d'lvoire,CI,CIV,384,Africa,Ariel
+Niger,NE,NER,562,Africa,Belle
+Burkina Faso,BF,BFA,854,Africa,Ariel
+Mali,ML,MLI,466,Africa,Belle
+Malawi,MW,MWI,454,Africa,Cinderella
+Zambia,ZM,ZMB,894,Africa,Cinderella
+Senegal,SN,SEN,686,Africa,Belle
+Zimbabwe,ZW,ZWE,716,Africa,Cinderella
+Rwanda,RW,RWA,646,Africa,Cinderella
+Benin,BJ,BEN,204,Africa,Belle
+Tunisia,TN,TUN,788,Africa,Elsa
+Togo,TG,TGO,768,Africa,Belle
+Libya,LY,LBY,434,Africa,Cinderella
+Namibia,NA,NAM,516,Africa,Cinderella
+Botswana,BW,BWA,72,Africa,Cinderella
+Gabon,GA,GAB,266,Africa,Belle
+Mauritius,MU,MUS,480,Africa,Cinderella
+Djibouti,DJ,DJI,262,Africa,Ariel
+Cabo Verde,CV,CPV,132,Africa,Rapunzel
+Seychelles,SC,SYC,690,Africa,Cinderella
+India,IN,IND,356,Asia,Cinderella
+Indonesia,ID,IDN,360,Asia,Cinderella
+Pakistan,PK,PAK,586,Asia,Cinderella
+Bangladesh,BD,BGD,50,Asia,Cinderella
+Japan,JP,JPN,392,Asia,Elsa
+Philippines,PH,PHL,608,Asia,Cinderella
+Vietnam,VN,VNM,704,Asia,Elsa
+Turkey,TR,TUR,792,Asia,Elsa
+Thailand,TH,THA,764,Asia,Cinderella
+South Korea,KR,KOR,410,Asia,Elsa
+Iraq,IQ,IRQ,368,Asia,Cinderella
+Afghanistan,AF,AFG,4,Asia,Snow White
+Saudi Arabia,SA,SAU,682,Asia,Cinderella
+Malaysia,MY,MYS,458,Asia,Cinderella
+Nepal,NP,NPL,524,Asia,Cinderella
+Sri Lanka,LK,LKA,144,Asia,Cinderella
+Kazakhstan,KZ,KAZ,398,Asia,Cinderella
+Cambodia,KH,KHM,116,Asia,Cinderella
+Jordan,JO,JOR,400,Asia,Cinderella
+Azerbaijan,AZ,AZE,31,Asia,Rapunzel
+United Arab Emirates,AE,ARE,784,Asia,Cinderella
+Tajikistan,TJ,TJK,762,Asia,Elsa
+Israel,IL,ISR,376,Asia,Ariel
+Laos,LA,LAO,418,Asia,Elsa
+Lebanon,LB,LBN,422,Asia,Cinderella
+Kyrgyzstan,KG,KGZ,417,Asia,Cinderella
+Singapore,SG,SGP,702,Asia,Cinderella
+Oman,OM,OMN,512,Asia,Cinderella
+Kuwait,KW,KWT,414,Asia,Cinderella
+Georgia,GE,GEO,268,Asia,Cinderella
+Mongolia,MN,MNG,496,Asia,Elsa
+Armenia,AM,ARM,51,Asia,Rapunzel
+Qatar,QA,QAT,634,Asia,Cinderella
+Bahrain,BH,BHR,48,Asia,Cinderella
+Timor-Leste,TL,TLS,626,Asia,Cinderella
+Bhutan,BT,BTN,64,Asia,Elsa
+Maldives,MV,MDV,462,Asia,Elsa
+Brunei,BN,BRN,96,Asia,Cinderella
+Taiwan,TW,TWN,158,Asia,Ariel
+Antigua and Barbuda,AG,ATG,28,North America,Cinderella
+Bahamas,BS,BHS,44,North America,Cinderella
+Belize,BZ,BLZ,84,North America,Cinderella
+Canada,CA,CAN,124,North America,Cinderella
+Costa Rica,CR,CRI,188,North America,Rapunzel
+Dominican Republic,DO,DOM,214,North America,Rapunzel
+El Salvador,SV,SLV,222,North America,Elsa
+Grenada,GD,GRD,308,North America,Cinderella
+Guatemala,GT,GTM,320,North America,Rapunzel
+Haiti,HT,HTI,332,North America,Belle
+Honduras,HN,HND,340,North America,Rapunzel
+Jamaica,JM,JAM,388,North America,Cinderella
+Mexico,MX,MEX,484,North America,Rapunzel
+Nicaragua,NI,NIC,558,North America,Rapunzel
+Panama,PA,PAN,591,North America,Rapunzel
+Saint Vincent and the Grenadines,VC,VCT,670,North America,Cinderella
+Trinidad and Tobago,TT,TTO,780,North America,Cinderella
+United States,US,USA,840,North America,Cinderella
+Argentina,AR,ARG,32,South America,Rapunzel
+Bolivia,BO,BOL,68,South America,Rapunzel
+Brazil,BR,BRA,76,South America,Rapunzel
+Chile,CL,CHL,152,South America,Rapunzel
+Colombia,CO,COL,170,South America,Rapunzel
+Ecuador,EC,ECU,218,South America,Rapunzel
+Guyana,GY,GUY,328,South America,Cinderella
+Paraguay,PY,PRY,600,South America,Rapunzel
+Peru,PE,PER,604,South America,Rapunzel
+Suriname,SR,SUR,740,South America,Cinderella
+Uruguay,UY,URY,858,South America,Rapunzel
+Venenzuela,VE,VEN,862,South America,Rapunzel
+Australia,AU,AUS,36,Oceana,Cinderella
+Fiji,FJ,FJI,242,Oceana,Cinderella
+New Zealand,NZ,NZL,554,Oceana,Cinderella

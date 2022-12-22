@@ -1,0 +1,37 @@
+id,movie_title,name,type,color,group
+0,Aladdin,Jafar,bad,#b21d26,red
+1,Alice in Wonderland,Queen of Hearts,bad,#ed0127,red
+2,Beauty and the Beast,Gaston,bad,#c90100,red
+3,Cinderella,Lady Tremaine,bad,#ba1c15,red
+4,Moana,Te Kā,neutral,#e51400,red
+5,Peter Pan,Captain Hook,bad,#c6262a,red
+6,Tangled,Mother Gothel,bad,#510118,red
+7,Moana,Moana,good,#fe6442,orange
+8,The Jungle book,Sphere Khan,bad,#e47902,orange
+9,Beauty and the Beast,Belle,good,#fcee8f,yellow
+10,Pocahontas,Pocahontas,good,#fdd68f,yellow
+11,Snow White and the Seven Dwarfs,Snow White,good,#ffec96,yellow
+12,Mulan,Mulan,good,#a0c87b,green
+13,Peter Pan,Peter Pan,neutral,#797230,green
+14,The Hunchback of Notre Dame,Quasimodo,good,#5b613b,green
+15,The Little Mermaid,Ariel,neutral,#53ae82,green
+16,The Princess and the Frog,Tiana,good,#ceddb4,green
+17,Alice in Wonderland,Alice,neutral,#03a2d3,blue
+18,Cinderella,Cinderella,good,#99b8d8,blue
+19,Frozen,Elsa,neutral,#7498c7,blue
+20,Hercules,Hades,bad,#63cfff,blue
+21,Lilo & Stitch,Stitch,neutral,#436bb4,blue
+22,Sleeping Beauty,Aurora,good,#5aa5f9,blue
+23,Aladdin,Aladdin,neutral,#523082,purple
+24,Frozen,Anna,good,#ac2386,purple
+25,Pocahontas,Governor Ratcliffe,bad,#86006d,purple
+26,Sleeping Beauty,Maleficent,bad,#ac50d1,purple
+27,Snow White and the Seven Dwarfs,Evil Queen,bad,#3e2375,purple
+28,The Princess and the Frog,Dr. Facilier,bad,#4c0f30,purple
+29,Big Hero 6,Professor Callaghan,bad,#100f04,black
+30,Lilo & Stitch,Captain Gantu,bad,#110e04,black
+31,Mulan,Shan Yu,bad,#040d18,black
+32,The Hunchback of Notre Dame,Claude Frollo,bad,#100f04,black
+33,The Little Mermaid,Ursula,bad,#1a0506,black
+34,One Hundred and One Dalmatians,Pongo,good,#efeef1,white
+35,The Aristocats,Duchess,good,#fef5f8,white

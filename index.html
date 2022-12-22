@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>A Story of Disney Animated Movies</title>
+    <meta name="author" content="Amelia Li, Joseph Wang, Sophia Yang" />
+    <meta name="description" content="Final project for CS171." />
+    <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+    <meta name="Resource-type" content="Document" />
+
+    <!-- Load CSS libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,400italic,300italic' rel='stylesheet' type='text/css'>
+
+    <!--[if IE]>
+    <script type="text/javascript">
+        var console = { log: function() {} };
+    </script>
+    <![endif]-->
+</head>
+<body>
+
+    <div id="fullpage">
+
+        <!-- Title page -->
+        <div class="section active" id="title-page">
+            <div class="container-fluid" style="height: 83vh;">
+                <div class="castle">
+                    <div class="row">
+                        <div class="col-10 offset-1">
+                            <!-- HEADING -->
+                            <div class="row d-flex justify-content-center align-self-center" id="title-animated" style="height: 80vh; padding: 0;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <h1 style="text-align:center;">a princess' perspective</h1>
+            </div>
+        </div>
+
+        <!-- Choose a princess -->
+        <div class="section" id="options-page">
+            <div class="container-fluid" style="height: 100vh; padding-top: 2vh">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <!-- HEADING -->
+                        <div class="row d-flex justify-content-center" style="height: 2vh; padding-top: 3vh;">
+                            <h1>welcome to the magical world of Disney princesses!</h1>
+                        </div>
+                        <div class="row d-flex justify-content-center" style="height:1vh">
+                            <h2 style="padding-top: 5vh">as your three fairy godmothers, we will guide you through your transformation</h2>
+                        </div>
+                        <div class="row d-flex justify-content-center" style="height: 4vh;">
+                            <div class="col-6 align-self-center" style="padding-top: 20vh">
+                                <h2 style="padding-top: 2vh">imagine you wake up and find yourself to be a princess...</h2>
+                                <h2 style="padding-top: 5vh">which princess will you be?</h2>
+                            </div>
+                            <div class="col-6 form-group" style="padding-top: 15vh;">
+                                <h4 style="text-align: center;" id="confirmation">please pick a princess</h4>
+                                <div class="row justify-content-center" style="padding-top: 3vh;">
+                                    <div class="grow d-flex" >
+                                        <img onclick="setPrincess('Belle')" src="img/belle.png" alt="" style="height: 180px;">
+                                    </div>
+                                    <div class="grow d-flex" style="padding-left: 2vh; padding-right:2vh">
+                                        <img onclick="setPrincess('Cinderella')" src="img/cinderella.png" alt="" style="height: 180px;">
+                                    </div>
+                                    <div class="grow d-flex">
+                                        <img onclick="setPrincess('Elsa')" src="img/elsa.png" alt="" style="height: 180px;">
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div style="padding-top: 3vh; ">
+                                        <h4>Belle</h4>
+                                    </div>
+                                    <div style="padding-top: 3vh; padding-left: 13vh; padding-right: 13vh;">
+                                        <h4>Cinderella</h4>
+                                    </div>
+                                    <div style="padding-top: 3vh; ">
+                                        <h4>Elsa</h4>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center" style="padding-top: 5vh">
+                                    <button id="nextPage" type="button" class="btn btn-outline-dark btn-lg">Confirm</button>
+                                </div>
+<!--                                <select name="princess-name" class="form-control" id="princess-name" onchange="showPrincessInfo()">-->
+<!--                                    <option selected="" disabled="">Princess</option>-->
+<!--                                    <option value="Belle">Belle</option>-->
+<!--                                    <option value="Cinderella">Cinderella</option>-->
+<!--                                    <option value="Elsa">Elsa</option>-->
+<!--                                </select>-->
+                            </div>
+                        </div>
+
+
+                        <!-- CONTENT -->
+                        <div class="row d-flex justify-content-center" style="height: 90vh; padding: 0;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results -->
+        <div class="section" id="results-page">
+            <div class="container-fluid" style="height: 100vh; padding-top: 2vh">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <!-- HEADING -->
+                        <div class="row d-flex justify-content-center" style="height: 5vh; padding: 0;">
+                            <div class="align-self-center" id="princessintro2">
+                                <h4 id="princessintro-alt" style="text-align: center; padding-top: 30vh;">you didn't pick a princess ):
+                                    <br>
+                                    you can scroll back up and pick
+                                    <br>
+                                    a princess before proceeding
+                                    <br>
+                                    <br>
+                                    or if you insist...
+                                    <br>
+                                    <br>
+                                    you can continue on this journey
+                                    <br>
+                                    without your princess persona
+                                    <br>
+                                    (definitely not as immersive!)
+                                </h4>
+                            </div>
+                        </div>
+
+                        <!-- CONTENT -->
+                        <div class="row d-flex justify-content-center" style="height: 90vh; padding: 0;">
+                            <div class="col">
+                                <img src="" alt="" id="princess-image" style="margin-top: 10vh;">
+                                <h1 id="princessintro" style="padding-top: 3vh; text-align: center;"></h1>
+                            </div>
+                            <div class="col" style="padding-top: 8vh;">
+                                <div id="princess-info" style="height: 60vh; padding: 3vh;">
+                                    <h3 id="movie-name"></h3>
+                                    <h3 id="movie-year"></h3>
+                                    <h3 id="voice-actor"></h3>
+                                    <h3 id="creator"></h3>
+                                    <h3 id="nationality"></h3>
+                                    <h3 id="original-writer"></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Color wheel -->
+        <div class="section" id="colorwheel-page">
+            <div class="container-fluid" style="height: 100vh; padding-top: 2vh">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <!-- HEADING -->
+                        <div class="row d-flex justify-content-center" style="height: 5vh; padding: 0;">
+                            <div class="align-self-center">
+                                <h1 style="text-align: center;">what is your color?</h1>
+                                <h5 style="font-size: 18px;" id="wheel-intro"></h5>
+                                <h3 id="wheel-intro-alt" style="text-align: center">Hover over a color in the middle ring to see what it represents!
+                                You can also hover over the inner ring to learn more about each color group. The outer
+                                ring represents whether that character is good, neutral, or bad.</h3>
+                            </div>
+                        </div>
+
+                        <!-- CONTENT -->
+                        <div class="row d-flex justify-content-center" style="height: 80vh; padding: 0; margin-top: 100px;">
+                            <div class="col">
+                                <div id="wheelDiv" style="height: 100%; width:100%;"></div>
+                            </div>
+                            <div class="col">
+                                <div class="row" id="colorText" style="height: 33vh; padding: 2vh; margin-top: 8vh;">
+                                </div>
+                                <div class="row d-flex" id="character-info" style="height: 30vh; padding-top: 1vh; margin-top: 2vh">
+                                    <div class="col-5">
+                                        <img src="" alt="" id="character-image">
+                                    </div>
+                                    <div class="col-6" style="margin-top: 2vh;">
+                                        <h2 id="character-name"></h2>
+                                        <h5 id="character-movie"></h5>
+                                        <h5 id="character-color"></h5>
+                                        <h5 id="character-attribute"></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="section" id="timeline-page">
+            <div class="container-fluid" style="height: 100vh; padding-top: 2vh">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <!-- HEADING -->
+                        <div class="row d-flex justify-content-center" style="height: 5vh; padding: 0;">
+                            <div class="align-self-center">
+                                <h1 id="timeline-title-alt" style="text-align: center;">Let's learn about the Disney Universe!</h1>
+                                <h1 id="timeline-title"></h1>
+                                <p id="timeline-intro-alt" style="font-size: 25px;" style="text-align: center">Hover over each dot to see the movie name
+                                    and the produced year! You can spot our movies with Disney princesses by hovering over their pictures.</p>
+                                <h2 id="princess-year" style="padding-top:10vh"></h2>
+                                <h2 id="princess-age"></h2>
+                            </div>
+                        </div>
+
+                        <!-- CONTENT -->
+                        <div class="row d-flex justify-content-center" style="height: 90vh; padding: 0;">
+                            <div class="col">
+                                <div id="timelineDiv" style="height: 100%; width:100%;"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map -->
+        <div class="section" id="map-page">
+            <div class="container-fluid" style="height: 100vh; padding-top: 2vh">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <!-- HEADING -->
+                        <div class="row d-flex justify-content-center" style="height: 5vh; padding: 0;">
+                            <div class="align-self-center">
+                                <h1 style="text-align: center;">where are you most loved?</h1>
+                                <h4 id="map-intro" style="padding-top: 2vh;"></h4>
+                                <h2 id="map-intro-alt" style="padding-top: 2vh;">Find out which princess is each country's favorite by hovering over the map!</h2>
+                            </div>
+                        </div>
+
+                        <!-- CONTENT -->
+                        <div class="row d-flex justify-content-center" style="height: 90vh; padding: 0;">
+                            <div class="col">
+                                <div id="mapDiv" style="height: 100%; width:100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Network -->
+        <div class="section" id="network-page">
+            <div class="container-fluid" style="height: 100vh; padding-top: 2vh">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <!-- HEADING -->
+                        <div class="row d-flex justify-content-center" style="height: 30vh; padding: 0;">
+                            <div class="align-self-center">
+                                <h1 style="text-align: center">Let's meet your friends (& foes)!</h1>
+                                <h5 id="network-intro" style="text-align: center"> Take a look at the relationships that our princesses have! Pink Mickeys are our princesses.
+                                    Hover over each Mickey to see who each character is connected to and how strong their relationship score are!
+                                    The thicker the line between two Mickeys, the stronger the connection between those two characters.
+                                </h5>
+                                <div class="col-4 d-flex justify-content-center align-items-center container" style="margin-top: 2vh;">
+                                    <select name="princess-name" class="form-control" id="princess-name" onchange="myNetworkVis.updateVis()">
+                                        <option selected disabled>Princess</option>
+                                        <option value="Belle">Belle</option>
+                                        <option value="Cinderella">Cinderella</option>
+                                        <option value="Elsa">Elsa</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTENT -->
+                        <div class="row d-flex justify-content-center" style="height: 65vh; padding: 0;">
+                            <div class="col-6">
+                                <div id="networkDiv" style="height: 100%; width:100%;"></div>
+                            </div>
+                            <div class="col-2">
+                                <div id="node-info" style="padding-top: 10vh; margin-right: 0">
+                                    <h1 id="node-name"></h1>
+                                    <h3 style="text-decoration: underline; text-align: left;">Connections</h3>
+                                    <h4 id="node-connections"></h4>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class = 'row'>
+                                    <img id="node-img" src=""></img>
+                                </div>
+                                <div class = 'row'>
+                                    <img id="connect-img" src=""></img>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scatter -->
+        <div class="section" id="scatter-page">
+            <div class="container-fluid" style="height: 100vh; padding-top: 2vh">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <!-- HEADING -->
+                        <div class="row d-flex justify-content-center" style="height: 5vh; padding: 0;">
+                            <div class="align-self-center" style="text-align: center">
+                                <h1>A good princess can bring success to the movie.</h1>
+                                <h5 id="scatter-intro" style="text-align: center">
+                                    Does a princess affect the performance of the movie? The answer is YES! A better rated princess would
+                                    increase the revenue of the entire franchise. Hover over the bubbles to see how you and other princesses did!
+                                </h5>
+                            </div>
+                        </div>
+
+                        <!-- CONTENT -->
+                        <div class="row d-flex justify-content-center" style="height: 90vh; padding: 0;">
+                            <div class="col">
+                                <div id="scatterDiv" style="height: 100%; width:100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Authors -->
+        <div class="section" id="author-page">
+            <div class="container-fluid" style="height: 100vh; padding-top: 2vh">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <!-- HEADING -->
+                        <div class="row container-fluid d-flex justify-content-center" style="height: 10vh; margin-top: 2vh;">
+                            <h1>Authors</h1>
+                        </div>
+
+                        <!-- CONTENT -->
+                        <div class="row d-flex" style="height: 80vh; padding: 0;">
+                            <div class="container-fluid d-flex justify-content-center">
+                                <div class="row authors" style="margin-top: 10vh;">
+                                    <div class="col-4">
+                                        <img src="img/flora.png" alt="">
+                                        <h3 style="padding-top: 2vh;">Amelia Li</h3>
+                                        <p>"Flora"</p>
+                                        <a href="mailto:weixili@g.harvard.edu">weixili@g.harvard.edu</a>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="img/fauna.png" alt="">
+                                        <h3 style="padding-top: 2vh;">Sophia Yang</h3>
+                                        <p>"Fauna"</p>
+                                        <a href="mailto:yanruiyang@g.harvard.edu">yanruiyang@g.harvard.edu</a>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="img/merryweather.png" alt="">
+                                        <h3 style="padding-top: 2vh;">Joseph Wang</h3>
+                                        <p>"Merryweather"</p>
+                                        <a href="mailto:yew632@g.harvard.edu">yew632@g.harvard.edu</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sources -->
+        <div class="section" id="sources-page">
+            <div class="container-fluid" style="height: 100vh; padding-top: 2vh">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <!-- HEADING -->
+                        <div class="row d-flex" style="height: 10vh; padding: 0;">
+                            <h1>Sources</h1>
+                        </div>
+
+                        <!-- CONTENT -->
+                        <div class="row d-flex" style="height: 80vh; padding: 0;">
+                            <ul>
+                                <li>"Disney Character Success," data.world. <a href="https://data.world/kgarrett/disney-character-success-00-16">https://data.world/kgarrett/disney-character-success-00-16</a></li>
+                                <li>"The Complete List of Disney Movies," imdb. <a href="https://www.imdb.com/list/ls068561553/">https://www.imdb.com/list/ls068561553/</a></li>
+                                <li>"What Disney Villains Can Tell Us About Color Psychology," venngage. <a href="https://venngage.com/blog/disney-villains/">https://venngage.com/blog/disney-villains/</a></li>
+                                <li>"Every Country's Favorite Disney Princess," play like mum. <a href="https://www.playlikemum.com/every-countrys-favourite-disney-princess/">https://www.playlikemum.com/every-countrys-favourite-disney-princess/</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- - - - - - - - - - - - >
+    <    Load JS libraries     >
+    <- - - - - - - - - - - - -->
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+    <!-- d3 -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3-array.v2.min.js"></script>
+    <script src="https://d3js.org/d3-geo.v2.min.js"></script>
+
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="https://d3js.org/d3-geo.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            licenseKey: "gplv3-license",
+            anchors: ['Title', 'Options', 'Results', 'ColorWheel', 'Timeline', 'Map', 'Network', 'Scatter', 'Bar', "Authors", "Sources"],
+            menu: '#menu',
+            slidesNavigation: true,
+            navigation: true,
+            navigationPosition: 'right',
+            lazyLoad: true,
+            credits: {enabled: false},
+            normalScrollElements: '#princess-name'
+        });
+
+        document.getElementById("nextPage").addEventListener("click", function() {
+            fullpage_api.moveSectionDown();
+        });
+    </script>
+    <!-- OWN JS -->
+    <script src="js/title.js"></script>
+    <script src="js/mapVis.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scatterVis.js"></script>
+    <script src="js/wheelVis.js"></script>
+    <script src="js/showInfo.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/networkVis.js"></script>
+</body>
+</html>

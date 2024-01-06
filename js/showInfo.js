@@ -15,7 +15,7 @@ function setPrincess(princess) {
 }
 
 function showPrincessInfo(){
-    
+
     let getTitleNode = document.getElementById("princessintro");
     let newTitle = "you picked " + selectedPrincess + "!";
     getTitleNode.innerText = newTitle;
@@ -42,7 +42,7 @@ function showDetailInfo(){
         document.getElementById("creator").innerText = "and created by " + belle["Creator"] + ".";
         document.getElementById("nationality").innerText = "You are a " + belle["Nationality"] + " Princess, by the way,";
         document.getElementById("original-writer").innerText = "as the movie is based on " + belle["Original Writer"] + "'s work in " + belle["Original Year"] + ".";
-        document.getElementById("princess-year").innerText = "You are born in Year " + belle["Year"] + ", Princess Belle. In 2022, you are "+(2022-belle["Year"]) + " years old";
+        document.getElementById("princess-year").innerText = "You are born in the year " + belle["Year"] + ", Princess Belle. In 2024, you are "+(2024-belle["Year"]) + " years old.";
         document.getElementById("princess-image").src = "img/bellemovie.jpg";
         document.getElementById("princess-age").innerText="You are ranked 5 among the 13 Disney princesses. Your eldest sister is Snow White; born in 1937, she is "+(belle["Year"]-1937)
         +" years older than you. Your youngest sister is Moana; born in 2016, she is " + (2016-belle["Year"]) +" years younger than you.";
@@ -59,7 +59,7 @@ function showDetailInfo(){
         document.getElementById("creator").innerText = "and created by " + cinderella["Creator"] + ".";
         document.getElementById("nationality").innerText = "You are a " + cinderella["Nationality"] + " Princess, by the way,";
         document.getElementById("original-writer").innerText = "as the movie is based on " + cinderella["Original Writer"] + "'s work in " + cinderella["Original Year"] + ".";
-        document.getElementById("princess-year").innerText = "You are born in Year " + cinderella["Year"] + ", Princess Cinderella. In 2022, you are "+(2022-cinderella["Year"]) + " years old";
+        document.getElementById("princess-year").innerText = "You are born in the year " + cinderella["Year"] + ", Princess Cinderella. In 2024, you are "+(2024-cinderella["Year"]) + " years old.";
         document.getElementById("princess-image").src = "img/cinderellamovie.jpg";
         document.getElementById("princess-age").innerText="You are ranked 2 among the 13 Disney princesses. Your eldest sister is Snow White; born in 1937, she is "+(cinderella["Year"]-1937)
             +" years older than you. Your youngest sister is Moana; born in 2016, she is " + (2016-cinderella["Year"]) +" years younger than you.";
@@ -76,7 +76,7 @@ function showDetailInfo(){
         document.getElementById("creator").innerText = "and created by " + elsa["Creator"] + ".";
         document.getElementById("nationality").innerText = "You are a " + elsa["Nationality"] + " Princess, by the way,";
         document.getElementById("original-writer").innerText = "as the movie is inspired by " + elsa["Original Writer"] + "'s work in " + elsa["Original Year"] +".";
-        document.getElementById("princess-year").innerText = "You are born in Year " + elsa["Year"] + ", Princess Elsa. In 2022, you are "+(2022-elsa['Year']) +" years old";
+        document.getElementById("princess-year").innerText = "You are born in the year " + elsa["Year"] + ", Princess Elsa. In 2024, you are "+(2024-elsa['Year']) +" years old.";
         document.getElementById("princess-image").src = "img/elsamovie.jpg";
         document.getElementById("princess-age").innerText="You are ranked 12 among the 13 Disney princesses. Your eldest sister is Snow White; born in 1937, she is "+(elsa["Year"]-1937)
             +" years older than you. Your youngest sister is Moana; born in 2016, she is " + (2016-elsa["Year"]) +" years younger than you."

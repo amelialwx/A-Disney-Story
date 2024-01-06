@@ -58,7 +58,7 @@ class Timeline {
             .scale(vis.x)
             .tickValues([parseDate("1937"),parseDate("1950"),parseDate("1959"),parseDate("1989"),parseDate("1991"),parseDate("1992"),
                 parseDate("1995"),parseDate("1998"),parseDate("2009"),parseDate("2010"),parseDate("2012"),parseDate("2013"),parseDate("2016"),parseDate("2022")]);
-           // .tickValues([1937,1950,1959,1989,1991,1992,1995,1998,2009,2010,2012,2013,2016,2022]);
+
         // Append x-axis
         vis.svg.append("g")
             .attr("class", "x-axis axis")
@@ -169,7 +169,6 @@ class Timeline {
                 .attr('width',config.avatar_size)
                 .attr('height',config.avatar_size)
                 .attr('transform','translate('+parseInt(vis.x(parseDate(d.posx))-config.avatar_size/2)+','+parseInt(vis.y(1)-config.avatar_size/2*1.5)+')')
-             //   .attr('transform','translate('+parseInt(vis.x(parseDate(d.posx))-config.avatar_size/2)+','+parseInt(vis.y(d.posy)-config.avatar_size/2)+')')
                 .attr('clip-path','url(#clipObj)');
         });
 
@@ -180,7 +179,6 @@ class Timeline {
             .attr("class", "tooltip-circle")
             .attr("cx", d => vis.x(+d.Year))
             .attr("cy", d => vis.y(+d["Description"]))
-          //  .attr("cy", d => vis.y(+d["IMDb Rating"]))
             .attr("r", function(d){
                 if (d.Princess === "None"){
                     return 6;

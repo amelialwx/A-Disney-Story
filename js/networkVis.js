@@ -241,7 +241,6 @@ class NetworkVis {
         vis.simulation = d3.forceSimulation(vis.networkData[networkPrincess].nodes)
             .force('charge', d3.forceManyBody().strength(-2500))
             .force('link', d3.forceLink(vis.networkData[networkPrincess].edges).distance(10))
-            //.force('center', d3.forceCenter().x(vis.width/2).y(vis.height/2))
             .force('center', d3.forceCenter(vis.width / 2, vis.height / 2))
             .force('collide', d3.forceCollide(vis.networkData[networkPrincess].nodes.count).iterations(20))
             .force('x', d3.forceX(vis.width / 2).strength(0.0015))

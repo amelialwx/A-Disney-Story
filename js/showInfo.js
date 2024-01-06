@@ -15,8 +15,7 @@ function setPrincess(princess) {
 }
 
 function showPrincessInfo(){
-    // let selectBox1 = document.getElementById("princess-name");
-    // selectedPrincess = selectBox1.options[selectBox1.selectedIndex].value;
+    
     let getTitleNode = document.getElementById("princessintro");
     let newTitle = "you picked " + selectedPrincess + "!";
     getTitleNode.innerText = newTitle;
@@ -28,6 +27,7 @@ function showPrincessInfo(){
     myNetworkVis.updateVis();
     myScatterVis.updateVis();
 }
+
 function showDetailInfo(){
     if (selectedPrincess === "Belle"){
         document.getElementById("princessintro-alt").innerText = "";

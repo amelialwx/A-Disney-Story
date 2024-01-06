@@ -17,11 +17,7 @@
     <!-- GOOGLE FONTS -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,400italic,300italic' rel='stylesheet' type='text/css'>
 
-    <!--[if IE]>
-    <script type="text/javascript">
-        var console = { log: function() {} };
-    </script>
-    <![endif]-->
+    
 </head>
 <body>
 
@@ -54,46 +50,42 @@
                             <h1>welcome to the magical world of Disney princesses!</h1>
                         </div>
                         <div class="row d-flex justify-content-center" style="height:1vh">
-                            <h2 style="padding-top: 5vh">as your three fairy godmothers, we will guide you through your transformation</h2>
+                            <h2 style="padding-top: 10vh">as your three fairy godmothers, we will guide you through your transformation</h2>
                         </div>
                         <div class="row d-flex justify-content-center" style="height: 4vh;">
-                            <div class="col-6 align-self-center" style="padding-top: 20vh">
+                            <div class="col-6 align-self-center" style="padding-top: 25vh">
                                 <h2 style="padding-top: 2vh">imagine you wake up and find yourself to be a princess...</h2>
                                 <h2 style="padding-top: 5vh">which princess will you be?</h2>
                             </div>
-                            <div class="col-6 form-group" style="padding-top: 15vh;">
-                                <h4 style="text-align: center;" id="confirmation">please pick a princess</h4>
-                                <div class="row justify-content-center" style="padding-top: 3vh;">
-                                    <div class="grow d-flex" >
-                                        <img onclick="setPrincess('Belle')" src="img/belle.png" alt="" style="height: 180px;">
+                            <div class="col-6 form-group" style="padding-top: 25vh">
+                                <div style=" border: solid #F6ECBD; border-width: 5px; background-color: #FCF5E5;">
+                                    <h4 style="text-align: center; padding-top: 2vh" id="confirmation">please pick a princess</h4>
+                                    <div class="row justify-content-center" style="padding-top: 3vh;">
+                                        <div class="grow d-flex" >
+                                            <img onclick="setPrincess('Belle')" src="img/belle.png" alt="" style="height: 180px;">
+                                        </div>
+                                        <div class="grow d-flex" style="padding-left: 2vh; padding-right:2vh">
+                                            <img onclick="setPrincess('Cinderella')" src="img/cinderella.png" alt="" style="height: 180px;">
+                                        </div>
+                                        <div class="grow d-flex">
+                                            <img onclick="setPrincess('Elsa')" src="img/elsa.png" alt="" style="height: 180px;">
+                                        </div>
                                     </div>
-                                    <div class="grow d-flex" style="padding-left: 2vh; padding-right:2vh">
-                                        <img onclick="setPrincess('Cinderella')" src="img/cinderella.png" alt="" style="height: 180px;">
+                                    <div class="row justify-content-center">
+                                        <div style="padding-top: 3vh; ">
+                                            <h4>Belle</h4>
+                                        </div>
+                                        <div style="padding-top: 3vh; padding-left: 13vh; padding-right: 13vh;">
+                                            <h4>Cinderella</h4>
+                                        </div>
+                                        <div style="padding-top: 3vh; ">
+                                            <h4>Elsa</h4>
+                                        </div>
                                     </div>
-                                    <div class="grow d-flex">
-                                        <img onclick="setPrincess('Elsa')" src="img/elsa.png" alt="" style="height: 180px;">
+                                    <div class="d-flex justify-content-center" style="padding-top: 3vh; padding-bottom: 2vh">
+                                        <button id="nextPage" type="button" class="btn btn-outline-dark btn-lg">Confirm</button>
                                     </div>
                                 </div>
-                                <div class="row justify-content-center">
-                                    <div style="padding-top: 3vh; ">
-                                        <h4>Belle</h4>
-                                    </div>
-                                    <div style="padding-top: 3vh; padding-left: 13vh; padding-right: 13vh;">
-                                        <h4>Cinderella</h4>
-                                    </div>
-                                    <div style="padding-top: 3vh; ">
-                                        <h4>Elsa</h4>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center" style="padding-top: 5vh">
-                                    <button id="nextPage" type="button" class="btn btn-outline-dark btn-lg">Confirm</button>
-                                </div>
-<!--                                <select name="princess-name" class="form-control" id="princess-name" onchange="showPrincessInfo()">-->
-<!--                                    <option selected="" disabled="">Princess</option>-->
-<!--                                    <option value="Belle">Belle</option>-->
-<!--                                    <option value="Cinderella">Cinderella</option>-->
-<!--                                    <option value="Elsa">Elsa</option>-->
-<!--                                </select>-->
                             </div>
                         </div>
 

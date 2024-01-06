@@ -15,11 +15,9 @@ function setPrincess(princess) {
 }
 
 function showPrincessInfo(){
-
     let getTitleNode = document.getElementById("princessintro");
     let newTitle = "you picked " + selectedPrincess + "!";
     getTitleNode.innerText = newTitle;
-    console.log(selectedPrincess);
     showDetailInfo();
     myTimeline.updateVis();
     myWheelVis.updateVis();

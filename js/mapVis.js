@@ -119,17 +119,17 @@ class MapVis {
         if (selectedPrincess) {
             document.getElementById("map-intro-alt").innerText = "";
             if (selectedPrincess === "Belle") {
-                document.getElementById("map-intro").innerText = "As Princess Belle, you are most loved by " +
-                    "the 8 countries highlighted in red, most of them in Africa. Though you are not the most popular princess, " +
+                document.getElementById("map-intro").innerText = "as Princess Belle, you are most loved by " +
+                    "the 8 countries highlighted in red, most of them in Africa. though you are not the most popular princess, " +
                     "you are still the 4th most popular!"
             }
             else if (selectedPrincess === "Cinderella") {
-                document.getElementById("map-intro").innerText = "As Princess Cinderella, you are most loved by " +
-                    "the 73 countries highlighted in red, most of them in Asia. You are by far the most popular Disney princess globally, congratulations!"
+                document.getElementById("map-intro").innerText = "as Princess Cinderella, you are most loved by " +
+                    "the 73 countries highlighted in red, most of them in Asia. you are by far the most popular Disney princess globally, congratulations!"
             }
             else if (selectedPrincess === "Elsa") {
-                document.getElementById("map-intro").innerText = "As Princess Elsa, you are most loved by " +
-                    "the 26 countries highlighted in red, most of them in Europe. Despite being one of the most recently introduced princess, you are" +
+                document.getElementById("map-intro").innerText = "as Princess Elsa, you are most loved by " +
+                    "the 26 countries highlighted in red, most of them in Europe. despite being one of the most recently introduced princess, you are" +
                     " the second most popular out of all the Disney princesses!"
             }
         }

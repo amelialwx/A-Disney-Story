@@ -26,8 +26,6 @@ class ScatterVis {
             .attr("height", vis.height)
             .attr('transform', `translate (${vis.margin.left}, ${vis.margin.top})`);
 
-        console.log(vis.imdbData)
-
         //x and y scale and axis
         vis.xScale = d3.scaleLinear()
             .domain([0, d3.max(vis.imdbData, d => +d['Num Votes'] + 100000)])
@@ -182,10 +180,6 @@ class ScatterVis {
 
     updateVis() {
         let vis = this;
-        // vis.svg.select('.y-axis')
-        //     .call(vis.yAxis);
-        // vis.svg.select('.x-axis')
-        //     .call(vis.xAxis);
 
         vis.circle
             .on('mouseover', function(event, d){
@@ -260,8 +254,6 @@ class ScatterVis {
                 .attr('stroke-width', '1px')
         }
 
-        console.log(princessColors[selectedPrincess])
-
         vis.svg.selectAll('.'+selectedPrincess)
             .style('fill', princessColors[selectedPrincess])
             .attr('stroke', 'red')
@@ -269,9 +261,6 @@ class ScatterVis {
 
 
         let princessElement = vis.imdbData.find(x => x.Princess === selectedPrincess)
-
-        console.log(princessElement)
-
 
         let textData = [
             `Congratulations, -${selectedPrincess}-!`,

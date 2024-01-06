@@ -24,12 +24,11 @@ class Timeline {
             d["IMDb Rating"] = +d["IMDb Rating"];
         });
         vis.data.sort((a,b)=> a.Year - b.Year);
-        console.log(vis.data);
 
-        vis.margin = {top: 100, right: 40, bottom: 30, left: 40};
+        vis.margin = {top: 150, right: 40, bottom: 30, left: 40};
 
         vis.width = document.getElementById(vis._parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        vis.height = document.getElementById(vis._parentElement).getBoundingClientRect().height/2  - vis.margin.top - vis.margin.bottom;
+        vis.height = document.getElementById(vis._parentElement).getBoundingClientRect().height/1.5  - vis.margin.top - vis.margin.bottom;
 
         // SVG drawing area
         vis.svg = d3.select("#" + vis._parentElement).append("svg")
@@ -38,10 +37,6 @@ class Timeline {
             .append("g")
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
-        // Scales and axes
-      //  vis.x = d3.scaleTime()
-        //    .range([0, vis.width])
-          //  .domain([parseDate("1935"), parseDate("2022")])
         let n = 13
         vis.x = d3.scaleTime()
             .range([0,1/n*vis.width, 2/n*vis.width,3/n*vis.width,4/n*vis.width,5/n*vis.width,6/n*vis.width,
@@ -51,7 +46,6 @@ class Timeline {
 
         vis.y = d3.scaleLinear()
             .domain([d3.max(vis.data, d => +d['Description'])+0.5, d3.min(vis.data, d => +d['Description'])-0.5])
-          //  .domain([d3.max(vis.data, d => +d['IMDb Rating'])+0.5, d3.min(vis.data, d => +d['IMDb Rating'])-0.5])
             .range([0, vis.height]);
 
         vis.xAxis = d3.axisBottom()
@@ -86,75 +80,70 @@ class Timeline {
 
         vis.princessPics = [{
             name: "Snow White",
-          posx: 1937,
+            posx: 1937,
             posy: 7.6,
             img: "img/snowwhite.png"
-        },
-            {
-                name: "Elsa",
+        }, {
+            name: "Elsa",
             posx: 2013,
             posy: 7.4,
             img: "img/elsa.png",
         }, {
             name: "Cinderella",
-                posx: 1950,
-                posy: 7.3,
-                img: "img/cinderella.png",
-            },
-            {
-                name: "Aurora",
-                posx: 1959,
-                posy: 7.2,
-                img: "img/aurora.png",
-            },
-            {
-                name: "Ariel",
+            posx: 1950,
+            posy: 7.3,
+            img: "img/cinderella.png",
+        }, {
+            name: "Aurora",
+            posx: 1959,
+            posy: 7.2,
+            img: "img/aurora.png",
+        }, {
+            name: "Ariel",
             posx: 1989,
             posy: 7.6,
             img: "img/ariel.png"
         }, {
             name: "Belle",
-                posx: 1991,
-                posy: 8,
-                img: "img/belle.png",
-            },{
+            posx: 1991,
+            posy: 8,
+            img: "img/belle.png",
+        }, {
             name: "Jasmine",
-                posx: 1992,
-                posy: 8,
-                img: "img/jasmine.png",
-            },{
+            posx: 1992,
+            posy: 8,
+            img: "img/jasmine.png",
+        }, {
             name: "Pocahontas",
-                posx: 1995,
-                posy: 6.7,
-                img: "img/pocahontas.png",
-            },
-            {
-                name: "Mulan",
-                posx: 1998,
-                posy: 7.6,
-                img: "img/mulan.png",
-            },{
-                name: "Moana",
-                posx: 2016,
-                posy: 7.6,
-                img: "img/moana.png",
-            },{
-                name: "Rapunzel",
-                posx: 2010,
-                posy: 7.7,
-                img: "img/rapunzel.png",
-            },{
-                name: "Tiana",
-                posx: 2009,
-                posy: 7.1,
-                img: "img/tiana.png",
-            },{
-                name: "Merida",
-                posx: 2012,
-                posy: 7.1,
-                img: "img/merida.png",
-            }
-        ];
+            posx: 1995,
+            posy: 6.7,
+            img: "img/pocahontas.png",
+        }, {
+            name: "Mulan",
+            posx: 1998,
+            posy: 7.6,
+            img: "img/mulan.png",
+        },{
+            name: "Moana",
+            posx: 2016,
+            posy: 7.6,
+            img: "img/moana.png",
+        },{
+            name: "Rapunzel",
+            posx: 2010,
+            posy: 7.7,
+            img: "img/rapunzel.png",
+        },{
+            name: "Tiana",
+            posx: 2009,
+            posy: 7.1,
+            img: "img/tiana.png",
+        },{
+            name: "Merida",
+            posx: 2012,
+            posy: 7.1,
+            img: "img/merida.png",
+        }];
 
         vis.princessCircles = vis.svg.append('clipPath')
             .attr('id','clipObj')
@@ -222,7 +211,7 @@ class Timeline {
         let vis = this;
         let formatDate = d3.timeFormat("%Y");
         vis.circles
-            .attr("fill",function(d){
+            .attr("fill", function(d){
                 if (d.Princess === "None"){
                     return "white";
                 } else if (d.Princess === "Belle" && selectedPrincess === "Belle"){

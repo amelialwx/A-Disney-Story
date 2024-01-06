@@ -3,7 +3,6 @@
 * * * * * * * * * * * * * * */
 
 class WheelVis {
-
     // constructor method to initialize the Map object
     constructor(parentElement, colorData) {
         this.parentElement = parentElement;
@@ -141,8 +140,6 @@ class WheelVis {
 
     updateVis() {
         let vis = this;
-
-        console.log(selectedPrincess);
 
         function isSelectedPrincess(princess) {
             return princess.name === selectedPrincess;
